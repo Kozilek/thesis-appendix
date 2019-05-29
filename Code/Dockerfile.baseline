@@ -1,0 +1,26 @@
+# Run with command : docker run -v "$(pwd)/Baselines":/usr/src/app remimic:baselines
+# Build with tag remimic:baselines
+# Choose base-image
+FROM python:3.6-onbuild
+
+# Install cmake
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y build-essential \
+    sudo \
+    cmake \
+    git \
+    openssh-server python-mpi4py python-numpy \
+    python-virtualenv python-scipy gcc gfortran openmpi-checkpoint binutils \
+    openmpi-bin openmpi-common libopenmpi-dev \
+    python-mpi4py \
+    python-numpy
+
+# Install packages
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY requirements_baselines.txt /usr/src/app/
+RUN pip install --no-cache-dir -r requirements_baselines.txt
+
+# Execute env_test.py on runtime
+WORKDIR /usr/src/app
+CMD ["python", "./baseline_main.py"]

@@ -1,0 +1,1756 @@
+<robot name="DeepMimic">
+	<material name="material_1">
+		<color rgba="0.4706 0.549 0.6863 1"/>
+		<texture filename="grid0.png"/>
+	</material>
+	<material name="material_2">
+		<color rgba="0.6392 0.6941 0.7372 1"/>
+		<texture filename="grid0.png"/>
+	</material>
+	<material name="material_3">
+		<color rgba="0.5392 0.5941 0.6372 1"/>
+		<texture filename="grid0.png"/>
+	</material>
+	<material name="material_4">
+		<color rgba="0.3529 0.41176 0.47059 1"/>
+		<texture filename="grid0.png"/>
+	</material>
+	<material name="material_5">
+		<color rgba="0.2529 0.31176 0.37059 1"/>
+		<texture filename="grid0.png"/>
+	</material>
+	<material name="material_6">
+		<color rgba="0.3 0.3 0.3 1"/>
+		<texture filename="grid0.png"/>
+	</material>
+	<material name="marker">
+		<color rgba="0.7 0 0 1"/>
+	</material>
+	<link name="link_root">
+		<visual>
+			<geometry>
+				<sphere radius="0.09"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.07 0.0"/>
+			<material name="material_1"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.09"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.07 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="6.0"/>
+			<inertia ixx="0.019440000000000002" ixy="0" ixz="0" iyy="0.019440000000000002" iyz="0" izz="0.019440000000000002"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 0.07 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.07"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.205 0.0"/>
+			<material name="material_1"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.07"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.205 0.0"/>
+		</collision>
+	</link>
+	<link name="link_chest">
+		<visual>
+			<geometry>
+				<sphere radius="0.11"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.12 0.0"/>
+			<material name="material_1"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.11"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.12 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="14.0"/>
+			<inertia ixx="0.06776000000000001" ixy="0" ixz="0" iyy="0.06776000000000001" iyz="0" izz="0.06776000000000001"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 0.12 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<cylinder length="0.05" radius="0.045"/>
+			</geometry>
+			<origin rpy="-0.06920367320510334 -0.21 0.0338" xyz="-0.011 0.24 0.095"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="-0.06920367320510334 -0.21 0.0338" xyz="-0.011 0.24 0.07"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="-0.06920367320510334 -0.21 0.0338" xyz="-0.011 0.24 0.12"/>
+			<material name="material_2"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.05" radius="0.045"/>
+			</geometry>
+			<origin rpy="-0.06920367320510334 -0.21 0.0338" xyz="-0.011 0.24 0.095"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="-0.06920367320510334 -0.21 0.0338" xyz="-0.011 0.24 0.07"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="-0.06920367320510334 -0.21 0.0338" xyz="-0.011 0.24 0.12"/>
+		</collision>
+		<visual>
+			<geometry>
+				<cylinder length="0.05" radius="0.045"/>
+			</geometry>
+			<origin rpy="3.2107963267948962 0.21 0.0338" xyz="-0.011 0.24 -0.095"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="3.2107963267948962 0.21 0.0338" xyz="-0.011 0.24 -0.12"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="3.2107963267948962 0.21 0.0338" xyz="-0.011 0.24 -0.07"/>
+			<material name="material_4"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.05" radius="0.045"/>
+			</geometry>
+			<origin rpy="3.2107963267948962 0.21 0.0338" xyz="-0.011 0.24 -0.095"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="3.2107963267948962 0.21 0.0338" xyz="-0.011 0.24 -0.12"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="3.2107963267948962 0.21 0.0338" xyz="-0.011 0.24 -0.07"/>
+		</collision>
+	</link>
+	<link name="link_neck">
+		<visual>
+			<geometry>
+				<sphere radius="0.1025"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.175 0.0"/>
+			<material name="material_1"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.1025"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.175 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="2.0"/>
+			<inertia ixx="0.008405" ixy="0" ixz="0" iyy="0.008405" iyz="0" izz="0.008405"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 0.175 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.02 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.02 0.0"/>
+		</collision>
+	</link>
+	<link name="link_right_hip">
+		<visual>
+			<geometry>
+				<cylinder length="0.3" radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.21 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.36 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.06 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.3" radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.21 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.36 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.06 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="4.5"/>
+			<inertia ixx="0.037153124999999995" ixy="0" ixz="0" iyy="0.037153124999999995" iyz="0" izz="0.001134375"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 -0.21 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_right_knee">
+		<visual>
+			<geometry>
+				<cylinder length="0.31" radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.2 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.355 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.04500000000000001 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.31" radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.2 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.355 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.04500000000000001 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="3"/>
+			<inertia ixx="0.025900000000000003" ixy="0" ixz="0" iyy="0.025900000000000003" iyz="0" izz="0.0006250000000000001"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 -0.2 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.035"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.035"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_right_ankle">
+		<visual>
+			<geometry>
+				<box size="0.177 0.09 0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.045 -0.0225 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size="0.177 0.09 0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.045 -0.0225 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="0.003285749999999999" ixy="0" ixz="0" iyy="0.0028628333333333327" iyz="0" izz="0.0009270833333333333"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.045 -0.0225 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_right_shoulder">
+		<visual>
+			<geometry>
+				<cylinder length="0.18" radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.14 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.23 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.05000000000000002 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.18" radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.14 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.23 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.05000000000000002 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="1.5"/>
+			<inertia ixx="0.004809374999999999" ixy="0" ixz="0" iyy="0.004809374999999999" iyz="0" izz="0.000253125"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 -0.14 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_right_elbow">
+		<visual>
+			<geometry>
+				<cylinder length="0.135" radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.12 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.1875 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.05249999999999999 0.0"/>
+			<material name="material_2"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.135" radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.12 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.1875 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.05249999999999999 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="0.0019187499999999999" ixy="0" ixz="0" iyy="0.0019187499999999999" iyz="0" izz="0.00013333333333333334"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 -0.12 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.03"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.03"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_right_wrist">
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_3"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="0.5"/>
+			<inertia ixx="0.00032" ixy="0" ixz="0" iyy="0.00032" iyz="0" izz="0.00032"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
+		</inertial>
+	</link>
+	<link name="link_left_hip">
+		<visual>
+			<geometry>
+				<cylinder length="0.3" radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.21 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.36 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.06 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.3" radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.21 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.36 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.06 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="4.5"/>
+			<inertia ixx="0.037153124999999995" ixy="0" ixz="0" iyy="0.037153124999999995" iyz="0" izz="0.001134375"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 -0.21 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_left_knee">
+		<visual>
+			<geometry>
+				<cylinder length="0.31" radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.2 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.355 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.04500000000000001 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.31" radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.2 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.355 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.05"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.04500000000000001 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="3"/>
+			<inertia ixx="0.025900000000000003" ixy="0" ixz="0" iyy="0.025900000000000003" iyz="0" izz="0.0006250000000000001"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 -0.2 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.035"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.035"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_left_ankle">
+		<visual>
+			<geometry>
+				<box size="0.177 0.09 0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.045 -0.0225 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size="0.177 0.09 0.055"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.045 -0.0225 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="0.003285749999999999" ixy="0" ixz="0" iyy="0.0028628333333333327" iyz="0" izz="0.0009270833333333333"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.045 -0.0225 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_left_shoulder">
+		<visual>
+			<geometry>
+				<cylinder length="0.18" radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.14 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.23 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.05000000000000002 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.18" radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.14 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.23 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.045"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.05000000000000002 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="1.5"/>
+			<inertia ixx="0.004809374999999999" ixy="0" ixz="0" iyy="0.004809374999999999" iyz="0" izz="0.000253125"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 -0.14 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_left_elbow">
+		<visual>
+			<geometry>
+				<cylinder length="0.135" radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.12 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.1875 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.05249999999999999 0.0"/>
+			<material name="material_4"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.135" radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.12 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.1875 0.0"/>
+		</collision>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 -0.05249999999999999 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="0.0019187499999999999" ixy="0" ixz="0" iyy="0.0019187499999999999" iyz="0" izz="0.00013333333333333334"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 -0.12 0"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<sphere radius="0.03"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_6"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.03"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+	</link>
+	<link name="link_left_wrist">
+		<visual>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+			<material name="material_5"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.04"/>
+			</geometry>
+			<origin rpy="1.5707963267948966 0 0" xyz="0.0 0.0 0.0"/>
+		</collision>
+		<inertial>
+			<mass value="0.5"/>
+			<inertia ixx="0.00032" ixy="0" ixz="0" iyy="0.00032" iyz="0" izz="0.00032"/>
+			<origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
+		</inertial>
+	</link>
+	<link name="link_chest_x">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_chest_y">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_chest_z">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_neck_x">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_neck_y">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_neck_z">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_hip_x">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_hip_y">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_hip_z">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_ankle_x">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_ankle_y">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_ankle_z">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_shoulder_x">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_shoulder_y">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_right_shoulder_z">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_hip_x">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_hip_y">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_hip_z">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_ankle_x">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_ankle_y">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_ankle_z">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_shoulder_x">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_shoulder_y">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<link name="link_left_shoulder_z">
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="0.00016" ixy="0" ixz="0" iyy="0.00016" iyz="0" izz="0.00016"/>
+		</inertial>
+	</link>
+	<joint name="joint_chest" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="link_chest_z"/>
+		<child link="link_chest"/>
+	</joint>
+	<joint name="joint_neck" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="link_neck_z"/>
+		<child link="link_neck"/>
+	</joint>
+	<joint name="joint_right_hip" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="link_right_hip_z"/>
+		<child link="link_right_hip"/>
+	</joint>
+	<joint name="joint_right_knee" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 -0.421546 0.0"/>
+		<parent link="link_right_hip"/>
+		<child link="link_right_knee"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="150" lower="-3.14" upper="0" velocity="150"/>
+	</joint>
+	<joint name="joint_right_ankle" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="link_right_ankle_z"/>
+		<child link="link_right_ankle"/>
+	</joint>
+	<joint name="joint_right_shoulder" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="link_right_shoulder_z"/>
+		<child link="link_right_shoulder"/>
+	</joint>
+	<joint name="joint_right_elbow" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 -0.274788 0.0"/>
+		<parent link="link_right_shoulder"/>
+		<child link="link_right_elbow"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="60" lower="0" upper="3.14" velocity="60"/>
+	</joint>
+	<joint name="joint_right_wrist" type="fixed">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 -0.258947 0.0"/>
+		<parent link="link_right_elbow"/>
+		<child link="link_right_wrist"/>
+	</joint>
+	<joint name="joint_left_hip" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="link_left_hip_z"/>
+		<child link="link_left_hip"/>
+	</joint>
+	<joint name="joint_left_knee" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 -0.421546 0.0"/>
+		<parent link="link_left_hip"/>
+		<child link="link_left_knee"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="150" lower="-3.14" upper="0" velocity="150"/>
+	</joint>
+	<joint name="joint_left_ankle" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="link_left_ankle_z"/>
+		<child link="link_left_ankle"/>
+	</joint>
+	<joint name="joint_left_shoulder" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="link_left_shoulder_z"/>
+		<child link="link_left_shoulder"/>
+	</joint>
+	<joint name="joint_left_elbow" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 -0.274788 0.0"/>
+		<parent link="link_left_shoulder"/>
+		<child link="link_left_elbow"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="60" lower="0" upper="3.14" velocity="60"/>
+	</joint>
+	<joint name="joint_left_wrist" type="fixed">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 -0.258947 0.0"/>
+		<parent link="link_left_elbow"/>
+		<child link="link_left_wrist"/>
+	</joint>
+	<joint name="joint_chest_x" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.236151 0.0"/>
+		<parent link="link_root"/>
+		<child link="link_chest_x"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="200" lower="-1.2" upper="1.2" velocity="200"/>
+	</joint>
+	<joint name="joint_chest_y" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_chest_x"/>
+		<child link="link_chest_y"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="200" lower="-1.2" upper="1.2" velocity="200"/>
+	</joint>
+	<joint name="joint_chest_z" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_chest_y"/>
+		<child link="link_chest_z"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="200" lower="-1.2" upper="1.2" velocity="200"/>
+	</joint>
+	<joint name="joint_neck_x" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.223894 0.0"/>
+		<parent link="link_chest"/>
+		<child link="link_neck_x"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="50" lower="-1" upper="1" velocity="50"/>
+	</joint>
+	<joint name="joint_neck_y" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_neck_x"/>
+		<child link="link_neck_y"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="50" lower="-1" upper="1" velocity="50"/>
+	</joint>
+	<joint name="joint_neck_z" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_neck_y"/>
+		<child link="link_neck_z"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="50" lower="-1" upper="1" velocity="50"/>
+	</joint>
+	<joint name="joint_right_hip_x" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.084887"/>
+		<parent link="link_root"/>
+		<child link="link_right_hip_x"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="200" lower="-1.2" upper="1.2" velocity="200"/>
+	</joint>
+	<joint name="joint_right_hip_y" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_right_hip_x"/>
+		<child link="link_right_hip_y"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="200" lower="-1.57" upper="2.57" velocity="200"/>
+	</joint>
+	<joint name="joint_right_hip_z" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_right_hip_y"/>
+		<child link="link_right_hip_z"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="200" lower="-1" upper="1" velocity="200"/>
+	</joint>
+	<joint name="joint_right_ankle_x" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 -0.40987 0.0"/>
+		<parent link="link_right_knee"/>
+		<child link="link_right_ankle_x"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="90" lower="-1" upper="1" velocity="90"/>
+	</joint>
+	<joint name="joint_right_ankle_y" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_right_ankle_x"/>
+		<child link="link_right_ankle_y"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="90" lower="-1.57" upper="1.57" velocity="90"/>
+	</joint>
+	<joint name="joint_right_ankle_z" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_right_ankle_y"/>
+		<child link="link_right_ankle_z"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="90" lower="-1" upper="1" velocity="90"/>
+	</joint>
+	<joint name="joint_right_shoulder_x" type="revolute">
+		<origin rpy="0 0 0" xyz="-0.02405 0.2435 0.18311"/>
+		<parent link="link_chest"/>
+		<child link="link_right_shoulder_x"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="100" lower="-3.14" upper="0.5" velocity="100"/>
+	</joint>
+	<joint name="joint_right_shoulder_y" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_right_shoulder_x"/>
+		<child link="link_right_shoulder_y"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100" lower="-0.7" upper="3.14" velocity="100"/>
+	</joint>
+	<joint name="joint_right_shoulder_z" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_right_shoulder_y"/>
+		<child link="link_right_shoulder_z"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="100" lower="-1.5" upper="1.5" velocity="100"/>
+	</joint>
+	<joint name="joint_left_hip_x" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.084887"/>
+		<parent link="link_root"/>
+		<child link="link_left_hip_x"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="200" lower="-1.2" upper="1.2" velocity="200"/>
+	</joint>
+	<joint name="joint_left_hip_y" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_left_hip_x"/>
+		<child link="link_left_hip_y"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="200" lower="-1.57" upper="2.57" velocity="200"/>
+	</joint>
+	<joint name="joint_left_hip_z" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_left_hip_y"/>
+		<child link="link_left_hip_z"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="200" lower="-1" upper="1" velocity="200"/>
+	</joint>
+	<joint name="joint_left_ankle_x" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 -0.40987 0.0"/>
+		<parent link="link_left_knee"/>
+		<child link="link_left_ankle_x"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="90" lower="-1" upper="1" velocity="90"/>
+	</joint>
+	<joint name="joint_left_ankle_y" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_left_ankle_x"/>
+		<child link="link_left_ankle_y"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="90" lower="-1.57" upper="1.57" velocity="90"/>
+	</joint>
+	<joint name="joint_left_ankle_z" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_left_ankle_y"/>
+		<child link="link_left_ankle_z"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="90" lower="-1" upper="1" velocity="90"/>
+	</joint>
+	<joint name="joint_left_shoulder_x" type="revolute">
+		<origin rpy="0 0 0" xyz="-0.02405 0.2435 -0.18311"/>
+		<parent link="link_chest"/>
+		<child link="link_left_shoulder_x"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="100" lower="-0.5" upper="3.14" velocity="100"/>
+	</joint>
+	<joint name="joint_left_shoulder_y" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_left_shoulder_x"/>
+		<child link="link_left_shoulder_y"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100" lower="-0.7" upper="3.14" velocity="100"/>
+	</joint>
+	<joint name="joint_left_shoulder_z" type="revolute">
+		<origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+		<parent link="link_left_shoulder_y"/>
+		<child link="link_left_shoulder_z"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="100" lower="-1.5" upper="1.5" velocity="100"/>
+	</joint>
+	<link name="link_LFHD">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LFHD" type="fixed">
+		<origin xyz="0.05 0.22 -0.05"/>
+		<parent link="link_neck"/>
+		<child link="link_LFHD"/>
+	</joint>
+	<link name="link_LBHD">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LBHD" type="fixed">
+		<origin xyz="-0.05 0.22 -0.05"/>
+		<parent link="link_neck"/>
+		<child link="link_LBHD"/>
+	</joint>
+	<link name="link_RFHD">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RFHD" type="fixed">
+		<origin xyz="0.05 0.22 0.05"/>
+		<parent link="link_neck"/>
+		<child link="link_RFHD"/>
+	</joint>
+	<link name="link_RBHD">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RBHD" type="fixed">
+		<origin xyz="-0.05 0.22 0.05"/>
+		<parent link="link_neck"/>
+		<child link="link_RBHD"/>
+	</joint>
+	<link name="link_CLAV">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_CLAV" type="fixed">
+		<origin xyz="0.08 0.22 0"/>
+		<parent link="link_chest"/>
+		<child link="link_CLAV"/>
+	</joint>
+	<link name="link_STRN">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_STRN" type="fixed">
+		<origin xyz="0.12 0.08 0"/>
+		<parent link="link_chest"/>
+		<child link="link_STRN"/>
+	</joint>
+	<link name="link_T10">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_T10" type="fixed">
+		<origin xyz="-0.09 0.02 0"/>
+		<parent link="link_chest"/>
+		<child link="link_T10"/>
+	</joint>
+	<link name="link_C7">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_C7" type="fixed">
+		<origin xyz="-0.045 0.3 0"/>
+		<parent link="link_chest"/>
+		<child link="link_C7"/>
+	</joint>
+	<link name="link_RSHO">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RSHO" type="fixed">
+		<origin xyz="-0.01 0.28 0.15"/>
+		<parent link="link_chest"/>
+		<child link="link_RSHO"/>
+	</joint>
+	<link name="link_LSHO">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LSHO" type="fixed">
+		<origin xyz="-0.01 0.28 -0.15"/>
+		<parent link="link_chest"/>
+		<child link="link_LSHO"/>
+	</joint>
+	<link name="link_RBAK">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RBAK" type="fixed">
+		<origin xyz="-0.1 0.14 0.1"/>
+		<parent link="link_chest"/>
+		<child link="link_RBAK"/>
+	</joint>
+	<link name="link_RASI">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RASI" type="fixed">
+		<origin xyz="0.07 0.02 0.095"/>
+		<parent link="link_root"/>
+		<child link="link_RASI"/>
+	</joint>
+	<link name="link_LASI">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LASI" type="fixed">
+		<origin xyz="0.07 0.02 -0.095"/>
+		<parent link="link_root"/>
+		<child link="link_LASI"/>
+	</joint>
+	<link name="link_RPSI">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RPSI" type="fixed">
+		<origin xyz="-0.07 0.02 0.06"/>
+		<parent link="link_root"/>
+		<child link="link_RPSI"/>
+	</joint>
+	<link name="link_LPSI">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LPSI" type="fixed">
+		<origin xyz="-0.07 0.02 -0.06"/>
+		<parent link="link_root"/>
+		<child link="link_LPSI"/>
+	</joint>
+	<link name="link_RELB">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RELB" type="fixed">
+		<origin xyz="0 0 0.035"/>
+		<parent link="link_right_elbow"/>
+		<child link="link_RELB"/>
+	</joint>
+	<link name="link_LELB">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LELB" type="fixed">
+		<origin xyz="0 0 -0.035"/>
+		<parent link="link_left_elbow"/>
+		<child link="link_LELB"/>
+	</joint>
+	<link name="link_RWRA">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RWRA" type="fixed">
+		<origin xyz="0 0.03 -0.05"/>
+		<parent link="link_right_wrist"/>
+		<child link="link_RWRA"/>
+	</joint>
+	<link name="link_RWRB">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RWRB" type="fixed">
+		<origin xyz="0 0.03 0.05"/>
+		<parent link="link_right_wrist"/>
+		<child link="link_RWRB"/>
+	</joint>
+	<link name="link_RFIN">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RFIN" type="fixed">
+		<origin xyz="0.01 -0.04 0"/>
+		<parent link="link_right_wrist"/>
+		<child link="link_RFIN"/>
+	</joint>
+	<link name="link_LWRA">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LWRA" type="fixed">
+		<origin xyz="0 0.03 0.05"/>
+		<parent link="link_left_wrist"/>
+		<child link="link_LWRA"/>
+	</joint>
+	<link name="link_LWRB">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LWRB" type="fixed">
+		<origin xyz="0 0.03 -0.05"/>
+		<parent link="link_left_wrist"/>
+		<child link="link_LWRB"/>
+	</joint>
+	<link name="link_LFIN">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LFIN" type="fixed">
+		<origin xyz="0.01 -0.04 0"/>
+		<parent link="link_left_wrist"/>
+		<child link="link_LFIN"/>
+	</joint>
+	<link name="link_RTHI">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RTHI" type="fixed">
+		<origin xyz="0 -0.3 0.055"/>
+		<parent link="link_right_hip"/>
+		<child link="link_RTHI"/>
+	</joint>
+	<link name="link_LTHI">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LTHI" type="fixed">
+		<origin xyz="0 -0.3 -0.055"/>
+		<parent link="link_left_hip"/>
+		<child link="link_LTHI"/>
+	</joint>
+	<link name="link_RKNE">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RKNE" type="fixed">
+		<origin xyz="-0.02 0 0.045"/>
+		<parent link="link_right_knee"/>
+		<child link="link_RKNE"/>
+	</joint>
+	<link name="link_RTIB">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RTIB" type="fixed">
+		<origin xyz="0 -0.27 0.055"/>
+		<parent link="link_right_knee"/>
+		<child link="link_RTIB"/>
+	</joint>
+	<link name="link_LKNE">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LKNE" type="fixed">
+		<origin xyz="-0.02 0 -0.045"/>
+		<parent link="link_left_knee"/>
+		<child link="link_LKNE"/>
+	</joint>
+	<link name="link_LTIB">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LTIB" type="fixed">
+		<origin xyz="0 -0.27 -0.055"/>
+		<parent link="link_left_knee"/>
+		<child link="link_LTIB"/>
+	</joint>
+	<link name="link_RANK">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RANK" type="fixed">
+		<origin xyz="0 0.0 0.03"/>
+		<parent link="link_right_ankle"/>
+		<child link="link_RANK"/>
+	</joint>
+	<link name="link_RHEE">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RHEE" type="fixed">
+		<origin xyz="-0.05 -0.005 0.0"/>
+		<parent link="link_right_ankle"/>
+		<child link="link_RHEE"/>
+	</joint>
+	<link name="link_RTOE">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_RTOE" type="fixed">
+		<origin xyz="0.1 -0.005 0.0"/>
+		<parent link="link_right_ankle"/>
+		<child link="link_RTOE"/>
+	</joint>
+	<link name="link_LANK">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LANK" type="fixed">
+		<origin xyz="0 0.0 -0.03"/>
+		<parent link="link_left_ankle"/>
+		<child link="link_LANK"/>
+	</joint>
+	<link name="link_LHEE">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LHEE" type="fixed">
+		<origin xyz="-0.05 -0.005 -0.0"/>
+		<parent link="link_left_ankle"/>
+		<child link="link_LHEE"/>
+	</joint>
+	<link name="link_LTOE">
+		<visual>
+			<geometry>
+				<sphere radius="0.02"/>
+			</geometry>
+			<material name="marker"/>
+		</visual>
+		<inertial>
+			<mass value="0.01"/>
+			<inertia ixx="1.6000000000000001e-06" ixy="0" ixz="0" iyy="1.6000000000000001e-06" iyz="0" izz="1.6000000000000001e-06"/>
+		</inertial>
+	</link>
+	<joint name="joint_LTOE" type="fixed">
+		<origin xyz="0.1 -0.005 -0.0"/>
+		<parent link="link_left_ankle"/>
+		<child link="link_LTOE"/>
+	</joint>
+</robot>

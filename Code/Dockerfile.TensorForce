@@ -1,0 +1,26 @@
+# Run with command :  docker run -v "$(pwd)/TensorForce":/usr/src/app remimic:mpi-cpu-prebuildbullet
+# Build with tag remimic:mpi-cpu-prebuildbullet
+# Choose base-image
+FROM tensorflow/tensorflow:latest-py3
+
+# Install cmake
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y build-essential \
+    sudo \
+    cmake \
+    git \
+    openmpi-bin openmpi-common libopenmpi-dev \
+    python-mpi4py \
+    python-numpy \
+    python-virtualenv
+
+# Install packages
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY requirements_tf.txt /usr/src/app/
+RUN pip install --no-cache-dir -r requirements_tf.txt
+
+
+# Execute env_test.py on runtime
+WORKDIR /usr/src/app
+CMD ["python", "./main.py"]
