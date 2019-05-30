@@ -16,7 +16,7 @@ The training configurations are edited through the `baselines_main.py` and `main
 As this is not a computer science thesis, the code has not been cleaned up, and is provided only for the sake of completion.
 
 ## Training Data
-Collected data for the graphs in the thesis is included in the subdirectory `Training Data`. Data is in the `csv` file format, labeled with the figure numbers from the thesis. Files contain two columns, the first containing average performance, and the second the episode number. 
+Collected data for the graphs in the thesis is included in the subdirectory `Training Data`. Data is in the `csv` file format, labeled with the figure numbers from the thesis, followed by line label, eg. `2a Threshold .4.csv`. Files contain two columns, the first containing average performance, and the second the episode number. 
 
 ## Motion Data
 The motion data used in this thesis can be found in both the Stable Baselines and TenorForce code directories under the names `Trial01.npy` and `Trial09.npy`, containing the static and walking motions respectively. Note that only these two preprocessed data files are included, as the unprocessed data is about 1GB in size, and contains sensitive personal data of the human actors.
